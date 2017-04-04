@@ -1,0 +1,342 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<title>CAS #include</title>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<!-- CSS
+================================================== -->
+<link href="https://fonts.googleapis.com/css?family=Amaranth|Open+Sans" rel="stylesheet">
+<link rel="stylesheet" href="css/bootstrap.css">
+<link rel="stylesheet" href="css/bootstrap-responsive.css">
+<link rel="stylesheet" href="css/prettyPhoto.css" />
+<link rel="stylesheet" href="css/flexslider.css" />
+<link rel="stylesheet" href="css/custom-styles.css">
+
+<!--[if lt IE 9]>
+    <script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
+    <link rel="stylesheet" href="css/style-ie.css"/>
+<![endif]-->
+
+<!-- Favicons
+================================================== -->
+<link rel="shortcut icon" href="img/favicon.ico">
+<link rel="apple-touch-icon" href="img/apple-touch-icon.png">
+<link rel="apple-touch-icon" sizes="72x72" href="img/apple-touch-icon-72x72.png">
+<link rel="apple-touch-icon" sizes="114x114" href="img/apple-touch-icon-114x114.png">
+
+<!-- JS
+================================================== -->
+<script src="http://code.jquery.com/jquery-1.8.3.min.js"></script>
+<script src="js/bootstrap.js"></script>
+<script src="js/jquery.prettyPhoto.js"></script>
+<script src="js/jquery.flexslider.js"></script>
+<script src="js/jquery.custom.js"></script>
+<script type="text/javascript">
+$(document).ready(function () {
+
+    $("#btn-blog-next").click(function () {
+      $('#blogCarousel').carousel('next')
+    });
+     $("#btn-blog-prev").click(function () {
+      $('#blogCarousel').carousel('prev')
+    });
+
+     $("#btn-client-next").click(function () {
+      $('#clientCarousel').carousel('next')
+    });
+     $("#btn-client-prev").click(function () {
+      $('#clientCarousel').carousel('prev')
+    });
+
+});
+
+ $(window).load(function(){
+
+    $('.flexslider').flexslider({
+        animation: "slide",
+        slideshow: true,
+        start: function(slider){
+          $('body').removeClass('loading');
+        }
+    });
+});
+
+</script>
+
+</head>
+
+<body class="home">
+    <!-- Color Bars (above header)-->
+	<div class="color-bar-1"></div>
+    <div class="color-bar-2 color-bg"></div>
+
+    <div class="container">
+
+      <div class="row header"><!-- Begin Header -->
+
+        <!-- Logo
+        ================================================== -->
+        <div class="span5 logo">
+        	<a href="index.htm"><img src="img/include-logo.png" alt="" /></a>
+        </div>
+
+        <!-- Main Navigation
+        ================================================== -->
+        <div class="span7 navigation">
+            <div class="navbar hidden-phone">
+
+            <ul class="nav">
+                <li><a href="index.htm">Home</a></li>
+                <li><a href="diversity.htm">Diversity</a></li>
+                <li><a href="inclusion.htm">Inclusion</a></li>
+                <li><a href="events.htm">Events</a></li>
+                <li><a href="resources.htm">Resources</a></li>
+                <li><a href="contact.htm">Contact</a></li>
+            </ul>
+
+            </div>
+
+            <!-- Mobile Nav
+            ================================================== -->
+            <form action="#" id="mobile-nav" class="visible-phone">
+                <div class="mobile-nav-select">
+                <select onchange="window.open(this.options[this.selectedIndex].value,'_top')">
+                    <option value="">Navigate...</option>
+                    <option value="index.htm">Home</option>
+                        <option value="index.htm">- Full Page</option>
+                        <option value="index-gallery.htm">- Gallery Only</option>
+                        <option value="index-slider.htm">- Slider Only</option>
+                    <option value="features.htm">Features</option>
+                    <option value="page-full-width.htm">Pages</option>
+                        <option value="page-full-width.htm">- Full Width</option>
+                        <option value="page-right-sidebar.htm">- Right Sidebar</option>
+                        <option value="page-left-sidebar.htm">- Left Sidebar</option>
+                        <option value="page-double-sidebar.htm">- Double Sidebar</option>
+                    <option value="gallery-4col.htm">Gallery</option>
+                        <option value="gallery-3col.htm">- 3 Column</option>
+                        <option value="gallery-4col.htm">- 4 Column</option>
+                        <option value="gallery-6col.htm">- 6 Column</option>
+                        <option value="gallery-4col-circle.htm">- Gallery 4 Col Round</option>
+                        <option value="gallery-single.htm">- Gallery Single</option>
+                    <option value="blog-style1.htm">Blog</option>
+                        <option value="blog-style1.htm">- Blog Style 1</option>
+                        <option value="blog-style2.htm">- Blog Style 2</option>
+                        <option value="blog-style3.htm">- Blog Style 3</option>
+                        <option value="blog-style4.htm">- Blog Style 4</option>
+                        <option value="blog-single.htm">- Blog Single</option>
+                    <option value="page-contact.htm">Contact</option>
+                </select>
+                </div>
+                </form>
+
+        </div>
+
+      </div><!-- End Header -->
+
+    <div class="row headline"><!-- Begin Headline -->
+
+     	<!-- Slider Carousel
+        ================================================== -->
+        <div class="span8">
+            <div class="flexslider">
+              <ul class="slides">
+                <li><img src="img/gallery/slider-img-1.png" alt="slider" /></li>
+              </ul>
+            </div>
+        </div>
+
+        <!-- Headline Text
+        ================================================== -->
+        <div class="span4">
+        	<h2>Computer Science for all</h2>
+            <p class="lead">We are a group of teachers, academics and professionals who are passionate about giving ALL students the opportunity to study Computing.</p>
+            <p class="lead">We support the inclusive teaching of Computing and Computer Science at all Key Stages across the UK.</p>
+        </div>
+    </div><!-- End Headline -->
+
+    <div class="row"><!-- Begin Bottom Section -->
+
+    	<!-- Blog Preview
+        ================================================== -->
+    	<div class="span6">
+
+            <h4 class="title-bg">Areas we cover</h4>
+
+        <div id="blogCarousel" class="carousel slide ">
+
+            <!-- Carousel items -->
+            <div class="carousel-inner">
+
+                 <!-- Blog Item 1 -->
+                <div class="active item">
+                    <a href="blog-single.htm"><img src="img/gallery/event.png" alt="" class="align-left blog-thumb-preview" /></a>
+                    <div class="post-info clearfix">
+                        <strong>Diversity</strong>
+                        <ul>
+                            <li>- Gender</li>
+                            <li>- Ethnicity</li>
+                            <li>- Socio-economic</li>
+                        </ul>
+                        <strong>Inclusion</strong>
+                        <ul>
+                            <li>- SEN</li>
+                            <li>- EAL</li>
+                            <li>- Disabilities</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <!-- Blog Item 2 -->
+                 <div class="item">
+                    <a href="blog-single.htm"><img src="img/gallery/blog-med-img-1.jpg" alt="" class="align-left blog-thumb-preview" /></a>
+                    <div class="post-info clearfix">
+                        <h4><a href="blog-single.htm">A great artist is always before his time</a></h4>
+                        <ul class="blog-details-preview">
+                            <li><i class="icon-calendar"></i><strong>Posted on:</strong> Sept 4, 2015<li>
+                            <li><i class="icon-user"></i><strong>Posted by:</strong> <a href="#" title="Link">Admin</a><li>
+                            <li><i class="icon-comment"></i><strong>Comments:</strong> <a href="#" title="Link">12</a><li>
+                            <li><i class="icon-tags"></i> <a href="#">photoshop</a>, <a href="#">tutorials</a>, <a href="#">illustration</a>
+                        </ul>
+                    </div>
+                    <p class="blog-summary">Lorem ipsum dolor sit amet, consectetur adipiscing elit. In interdum felis fermentum ipsum molestie sed porttitor ligula rutrum. Vestibulum lectus tellus, aliquet et iaculis sed, volutpat vel erat. <a href="#">Read more</a><p>
+                </div>
+
+                 <!-- Blog Item 3 -->
+                 <div class="item">
+                    <a href="blog-single.htm"><img src="img/gallery/blog-med-img-1.jpg" alt="" class="align-left blog-thumb-preview" /></a>
+                    <div class="post-info clearfix">
+                        <h4><a href="blog-single.htm">Is art everything to anybody?</a></h4>
+                        <ul class="blog-details-preview">
+                            <li><i class="icon-calendar"></i><strong>Posted on:</strong> Sept 4, 2015<li>
+                            <li><i class="icon-user"></i><strong>Posted by:</strong> <a href="#" title="Link">Admin</a><li>
+                            <li><i class="icon-comment"></i><strong>Comments:</strong> <a href="#" title="Link">12</a><li>
+                            <li><i class="icon-tags"></i> <a href="#">photoshop</a>, <a href="#">tutorials</a>, <a href="#">illustration</a>
+                        </ul>
+                    </div>
+                    <p class="blog-summary">Lorem ipsum dolor sit amet, consectetur adipiscing elit. In interdum felis fermentum ipsum molestie sed porttitor ligula rutrum. Vestibulum lectus tellus, aliquet et iaculis sed, volutpat vel erat. <a href="#">Read more</a><p>
+                </div>
+
+            </div>
+            </div>
+        </div>
+
+        <!-- Client Area
+        ================================================== -->
+        <div class="span6">
+
+            <h4 class="title-bg">What do #include members do?</h4>
+
+
+            <div class="carousel-inner">
+
+                <div class="quote-text">
+                    <ul>
+                        <li>Help classroom teachers to access and apply current research</li>
+                        <li>Design and run workshop style events to raise awareness</li>
+                        <li>Advise the Government and assessment bodies on diversity</li>
+                        <li>Speak at events to raise awareness of diversity issues </li>
+                        <li>Collate and create resources to teach inclusive lessons</li>
+                        <li>Liaise with industry partners to provide role models and opportunities</li>
+                    </ul>
+                </div>
+
+            </div>
+
+
+            <!-- Client Logo Thumbs-->
+            <ul class="client-logos">
+                <li><a href="http://www.computingatschool.org.uk/"><img src="img/gallery/caslogo.png" alt="Client"></a></li>
+                <li><a href="http://www.bcs.org/" class="client-link"><img src="img/gallery/bcslogo.png" alt="BCS"></a></li>
+                <li><a href="https://edu.google.com/resources/programs/google-rise-awards/" class="client-link"><img src="img/gallery/googlerise.png" alt="Google RISE"></a></li>
+            </ul>
+
+        </div>
+
+    </div><!-- End Bottom Section -->
+
+    <div class="row gallery-row"><!-- Begin Gallery Row -->
+
+    	<div class="span12">
+            <h4 class="title-bg">Examples of our work
+            </h4>
+
+        <!-- Gallery Thumbnails
+        ================================================== -->
+
+            <div class="row clearfix no-margin">
+            <ul class="gallery-post-grid holder">
+
+                    <!-- Gallery Item 1 -->
+                    <li  class="span3 gallery-item" data-id="id-1" data-type="illustration">
+                        <a href="https://drive.google.com/drive/folders/0B_fL8jea5FCNYUtlV1Jldk9ZdU0" target="_blank"><img src="img/gallery/robot-gallery.jpg" alt="Diversity toolkit"></a>
+                        <span class="project-details"><a href="https://drive.google.com/drive/folders/0B_fL8jea5FCNYUtlV1Jldk9ZdU0" target="_blank">Diversity toolkit</a>Our one hour training session</span>
+                    </li>
+
+                    <!-- Gallery Item 2 -->
+                    <li  class="span3 gallery-item" data-id="id-1" data-type="illustration">
+                        <a href="https://docs.google.com/presentation/d/1V6bxbU4EA3XLu27PtaVgiiDMxMocTt1TsWBp0hQfeNo/edit#slide=id.p" target="_blank"><img src="img/gallery/robot2-gallery.jpg" alt="Inclusion toolkit"></a>
+                        <span class="project-details"><a href="https://docs.google.com/presentation/d/1V6bxbU4EA3XLu27PtaVgiiDMxMocTt1TsWBp0hQfeNo/edit#slide=id.p" target="_blank">Inclusion toolkit</a>
+                            Our one hour training session</span>
+                    </li>
+
+                    <!-- Gallery Item 3 -->
+                    <li  class="span3 gallery-item" data-id="id-1" data-type="illustration">
+                        <a href="https://en.wikibooks.org/wiki/KS3_Computing" target="_blank"><img src="img/gallery/ks3-wikibook.png" alt="KS3 Wikibook"></a>
+                        <span class="project-details"><a href="https://en.wikibooks.org/wiki/KS3_Computing" target="_blank">KS3 Computing Wikibook</a>A free online textbook</span>
+                    </li>
+
+                    <!-- Gallery Item 4 -->
+                    <li  class="span3 gallery-item" data-id="id-1" data-type="illustration">
+                        <a href="https://en.m.wikibooks.org/wiki/A-level_Computing/AQA" target="_blank"><img src="img/gallery/ks5-wikibook.png" alt="A-Level Wikibook"></a>
+                        <span class="project-details"><a href="https://en.m.wikibooks.org/wiki/A-level_Computing/AQA" target="_blank">A-Level Computing Wikibook</a>A free online textbook</span>
+                    </li>
+
+
+                </ul>
+                </div>
+            </div>
+
+    </div><!-- End Gallery Row -->
+
+
+
+    </div> <!-- End Container -->
+
+    <!-- Footer Area
+        ================================================== -->
+
+	<div class="footer-container"><!-- Begin Footer -->
+    	<div class="container">
+
+
+            <div class="row"><!-- Begin Sub Footer -->
+                <div class="span12 footer-col footer-sub">
+                    <div class="row no-margin">
+                            <div class="span4"><span class="left">Copyright 2012 Piccolo Theme. All rights reserved.</span></div>
+
+                            <div class="span4">
+                                <ul class="social-icons">
+                                    <li><a href="#" class="social-icon facebook"></a></li>
+                                    <li><a href="http://www.twitter.com/casinclude" class="social-icon twitter"></a></li>
+                                </ul>
+                            </div>
+
+                        <div class="span4">
+                            <span class="right">
+                            <a href="home.html">Home</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;<a href="diversity.htm">Diversity</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;<a href="inclusion.htm">Inclusion</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;<a href="events.htm">Events</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;<a href="resources.htm">Resources</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;<a href="contact.htm">Contact</a>
+                            </span>
+                        </div>
+                    </div>
+                </div>
+            </div><!-- End Sub Footer -->
+
+        </div>
+    </div><!-- End Footer -->
+
+    <!-- Scroll to Top -->
+    <div id="toTop" class="hidden-phone hidden-tablet">Back to Top</div>
+
+</body>
+</html>
